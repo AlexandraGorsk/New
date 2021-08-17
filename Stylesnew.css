@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 1400px;
+    width: 1439px;
+    margin: auto;
+    background: rgb(240, 240, 240);
+}
+header {
+    background-color: #fff;
+    height: 80px;
+    border-radius: 0 0 8px 8px;
+    padding-left: 83px;
+    padding-right: 82px;
+    display: flex;
+    justify-content: space-between;
+    gap: 201px;
+}
+.logo img{
+    padding:10px 30px 21px 30px;
+    box-shadow: 0 0 5px 2px gray;
+    border-radius: 0px 0px 10px 10px;
+}
+.logo {
+    cursor: pointer;
+    background: #FFF;
+    height: 111px;
+    width: 144px;
+}
+/* .search{
+    margin: 59px auto 20px;
+    background-color : #a8a8a8;
+   width: 581px;
+   height: 1px;
+   border-radius: 0.5px;
+} */
+.search {
+    position: relative;
+    padding-top: 20px;
+}
+input {
+    border: none;
+    border-bottom: 1px solid #A8A8A8;
+    width: 581px;
+    font-size: 14px;
+}
+.search input {
+    padding: 8px 10px 8px 40px;
+}
+.search-icon {
+    position: absolute;
+    left: 0;
+    top: 28px;
+}
+.left {
+    margin-left: 68px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.wrapper {
+    max-width: 1439px;
+    height: 1400px;
+    margin: 50px 81px 48px 80px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+aside {
+    padding: 25px;
+    width: 338px;
+    height: 378px;
+    background-color: #FFF;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 9px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.ingredient {
+    width: 953px;
+    background-color: #FFF;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 25px;
+}
+.HowToCook {
+    display: flex;
+    justify-content: space-between;
+    width: 953px;
+    background-color: #FFF;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 25px;
+}
+.Additional {
+    width: 953px;
+    background-color: #FFF;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 25px;
+}
+.frontimg {
+    width: 254px;
+    height: 150px;
+}
+aside img {
+    cursor: pointer;
+    width: 78px;
+    height: 81px;
+}
+ .last img{
+    cursor: auto;
+    filter: opacity(40%);
+}
+.last {
+    position: relative;
+}
+aside div span{
+    cursor: pointer;
+    top: 29px;
+    left: 25px;
+    position: absolute;
+    font: 700 16px 'Nunito', sans-serif;;
+    color: #030F09;
+}
+.ingredienthead{
+    display: flex;
+    gap: 48px;
+}
+h3{
+    color: #030F09;
+    font: 700 24px 'Nunito', sans-serif;
+    height: 64px;
+    width: 382px;
+}
+.edit p{
+    margin-top: 14px;
+    color: #30BE76;;
+    font: 700 16px 'Nunito', sans-serif;
+    background: #fff;
+    margin-left: 159px;
+    cursor: pointer;
+}
+button {
+    width: 158px;
+    height: 48px;
+    background: #30BE76;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font: 400 16px 'Nunito', sans-serif;
+    cursor: pointer;
+    border: 1px solid #30BE76;
+}
+.ingredient div.line {
+    background: #E6E6E6;
+    margin: 20px auto;
+    width: 905px;
+    height: 1px;
+    }
+h5 {
+    font: 700 16px 'Nunito', sans-serif;
+    color: #030F09;
+    margin-bottom: 23px;
+}
+.ingredient ul {
+    column-count: 2;
+    list-style: none;
+}
+.ingredient ul li{
+    font: 400 14px 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.ingredient ul li:nth-child(3n){
+    margin-bottom: 0px;
+}
+
+.ingredient ul li .icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+.ingredient ul li span{
+    margin-left: 16px;
+}
+.description h5 {
+    margin-left: 5px;
+    margin-bottom: 32px;
+}
+.HowToCook ul{
+    list-style: none;
+}
+.video {
+    position: relative;
+}
+.video img{
+    height: 262px;
+    width: 444px;
+    margin-top: 63px;
+    border-radius: 10px;
+}
+.description span {
+    width: 390px;
+    position: relative;
+    left: 34px;
+    display: inline-block;
+}
+.HowToCook ul li:before{
+    position: absolute;
+    content: counter(parts);
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 1px solid #30BE76;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    text-align: center;
+    color: #30BE76;
+    font: 400 12px/20px 'Nunito', sans-serif;
+  }
+  img.play {
+      cursor: pointer;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 107px;
+      right: 197px;
+  }
+.HowToCook ul li{
+    width: 390px;
+    font: 400 14px 'Nunito', sans-serif;
+    counter-increment: parts;
+    margin-bottom: 20px;
+}
+.Additional h5 {
+    margin-bottom: 30px;
+}
+.time ul li:first-child:before{
+    content: 'Serving Time (±) ';
+    font: 400 14px 'Nunito', sans-serif;
+    color: #A8A8A8;
+    margin-right: 24px;
+  }
+  
+  .facts ul li:not(:first-child){
+    margin-left: 131px;
+  }
+  .facts ul li:first-child:before{
+    content: 'Nutrition Facts ';
+    font: 400 14px 'Nunito', sans-serif;
+    color: #A8A8A8;
+    margin-right: 36px;
+  }
+  .Addmain ul{
+    margin-bottom: 25px;
+  }
+  ul li{
+    margin-bottom: 4px;
+    list-style-type:none;
+    font: 400 14px'Nunito', sans-serif;
+    color: #030F09;
+  }
+  .Addmain {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tags ul li:first-child:before{
+    content: 'Tags ';
+    margin-right: 98px;
+    position: relative;
+    font: 400 14px 'Nunito', sans-serif;
+    color: #A8A8A8;
+  }
+  .tags ul li{
+    width: 310px;
+    margin-right: 24px;
+  }
+  .tags span {
+      position: absolute;
+      display: inline-block;
+      width: 182px;
+  }
+  .time {
+    margin-right: 274px;
+  }
+
+  @media (max-width: 760px) {
+body     {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 760px;
+}
+header {
+    justify-content: space-between;
+    height: 108px;
+}
+.logo {
+    background: none;
+    width: 52px;
+    height: 50px;
+}
+.logo img{
+    width: 52px;
+    height: 50px;
+    box-shadow: none;
+    border: none;
+}
+aside {
+    width: 760px;
+}
+  }
